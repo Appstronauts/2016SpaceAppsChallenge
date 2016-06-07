@@ -1,5 +1,6 @@
 var julianStart = 2451545;
 var julianStop = 2456770;
+var bingKey = 'nJs9jcUdrfZ8ffGkhztI~31s98UxpsUd2nh_emoT7gQ~AqDCx0ohiWWj-14jaR2oa52Vb-w8iqwt07LAmx5mb-vbzW6oh01me-hP59YKp43v';
 
 var clock = new Cesium.Clock({
   startTime: new Cesium.JulianDate(julianStart),
@@ -12,7 +13,7 @@ var viewer = new Cesium.Viewer('cesiumContainer', {
   baseLayerPicker: false,
   imageryProvider: new Cesium.BingMapsImageryProvider({
     url: 'https://dev.virtualearth.net',
-    key: Cesium.BingMapsApi.defaultKey,
+    key: bingKey,
     mapStyle: Cesium.BingMapsStyle.AERIAL_WITH_LABELS
   })
 });
